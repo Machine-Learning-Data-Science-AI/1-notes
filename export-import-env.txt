@@ -1,0 +1,19 @@
+This is how you can use one project env to new project (because in that case you don't have to import every packages again)
+
+- first go to the project activate stage eg  conda activate C:\Users\Riya\Desktop\machine-learning-old
+- then export the env                    eg  conda env export > environment.yml 
+
+
+(The ".yml" extension typically denotes a file written in YAML (YAML Ain't Markup Language), a human-readable data serialization format commonly used for configuration files and data exchange in software development.)
+
+
+now it's to use this export data to machine-learning-new
+
+- first go to the project activate stage        eg  conda activate C:\Users\Riya\Desktop\machine-learning-old
+- then make the new file                        eg  mkdir machine-learning-new
+- go to file directery and write this command   eg  conda env create --prefix ./env -f environment.yml
+ *(make sure environment.yml file is already in machine-learning-new)
+
+
+
+you are ready to go , happy coding
